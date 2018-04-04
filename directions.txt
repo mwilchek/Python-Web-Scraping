@@ -1,0 +1,32 @@
+NEED TO DEBUG / AVOID REDIRECTS OR MIDDLEWARE
+
+Tutorial resource: https://docs.scrapy.org/en/latest/intro/tutorial.html
+
+To create a new scrapy project:
+1. Make a directory where you want the code to go
+2. In a cmd line for that directory type:
+- scrapy startproject name_of_project
+
+3. Go back to that directory and under spiders, make a python file for 1 main website to crawl
+4. Ensure it has name attribute, start_requests(), and parse()
+5. Go back to project directory in the cmd line and type:
+- scrapy crawl name_attribute_of_spider
+
+5A. To store data from spider while running type:
+- scrapy crawl quotes -o quotes.jl
+
+Note: This will store the data in a json file.
+
+6. Review how you defined the data to be saved
+
+May need to use XPATH instead of CSS to find right IDs:
+Source: http://zvon.org/comp/r/tut-XPath_1.html#Pages~List_of_XPaths
+
+_________________________________________________________________________________________
+
+https://doublelist.com/age_verify/?age=over18&camefrom=/view/washington_dc/cw4m/
+
+response.xpath('//div[@id="ad-list-box"]//*')
+
+https://doublelist.com/age_verify/?age=over18/view/washington_dc/cw4m/
+
