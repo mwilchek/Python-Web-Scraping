@@ -5,7 +5,7 @@ import pandas as pd
 
 # set PRAW API reqs
 reddit = praw.Reddit(client_id='nyk9gIgRru0IMQ',
-                     client_secret='liIo_b3xC2-oWQPpGWOZdU4H7Gs',
+                     client_secret='****************',
                      user_agent='windows:com.praw.testapp:v1 (by /u/SkyNet_Developer)')
 
 # Create submission tuple object with features
